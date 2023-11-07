@@ -1,0 +1,16 @@
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3306/vue
+    username: root
+    password: java
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB  # 파일 크기 제한
+      max-request-size: 10MB  # 요청 크기 제한
